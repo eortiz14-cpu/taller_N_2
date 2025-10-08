@@ -24,6 +24,12 @@ class Persona
         Telefono = telefono;
     }
 
+    public double CalcularIMC()
+    {
+        return Peso / (Altura * Altura);
+    }
+
+
     public void MostrarInformacion()
     {
         Console.WriteLine("\n====== DATOS DE LA PERSONA =====");
@@ -35,5 +41,8 @@ class Persona
         Console.WriteLine($"su Teléfono: {Telefono}");
         Console.WriteLine($"su Peso: {Peso} kg");
         Console.WriteLine($"su Altura: {Altura} m");
+
+        double imc = CalcularIMC();
+        Console.WriteLine($"\n-- IMC calculado: {imc:F2}");
     }
 }

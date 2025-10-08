@@ -23,11 +23,12 @@
         Console.Write("Ingrese su dirección: ");
         string direccion = Console.ReadLine() ?? "";
 
-        Console.Write("Ingrese su teléfono: ");
+        Console.Write("Ingrese su teléfono:");
         string telefono = Console.ReadLine() ?? "";
 
         Persona persona = new Persona(nombre, peso, altura, edad, genero, documento, direccion, telefono);
 
+        persona.CalcularIMC();
         persona.MostrarInformacion();
     }
 }
