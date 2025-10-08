@@ -28,6 +28,7 @@
 
         Persona persona = new Persona(nombre, peso, altura, edad, genero, documento, direccion, telefono);
 
+        persona.ClasificarIMC();
         persona.CalcularIMC();
         persona.MostrarInformacion();
     }
